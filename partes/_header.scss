@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+
+}
+
+.nav-contem-conteudo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+i
+{
+    color: $white-normal;
+}
+.icones
+{
+    display: flex;
+
+    gap: 20px;
+}
+
+.icones a:hover
+{
+i
+{
+    animation: AnimacaoY  0.8s ease-in-out infinite ;
+    color: $grenn-light;
+}
+
+}
+
+    
+@keyframes AnimacaoY  {
+  
+      
+from{
+    transform: translateY(0);
+}
+to{
+    transform: translateY(-4);
+
+}
+ 
+}
+.header-botao{
+    border:  solid 1px $white-normal;
+    padding: 8px 24px;
+    color: $white-normal;
+    border-radius:  4px;
+    background-color: transparent;
+    transition: 0.8s;
+}
+.header-botao:hover
+{
+    background-color: $grenn-light;
+    border:  solid 1px $grenn-light;
+}
