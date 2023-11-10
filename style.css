@@ -25,16 +25,16 @@ i {
 }
 
 .icones a:hover i {
-  animation: AnimacaoY 0.8s ease-in-out infinite;
+  animation: translateY 0.8s infinite alternate;
   color: #83D940;
 }
 
-@keyframes AnimacaoY {
+@keyframes translateY {
   from {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   to {
-    transform: translateY(-4);
+    transform: translateY(-8px) scale(1.1);
   }
 }
 .header-botao {
@@ -51,6 +51,32 @@ i {
   border: solid 1px #83D940;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-contem-conteudo {
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-logo img {
+    width: 168px;
+    margin-top: 20px;
+  }
+  .header-botao {
+    display: none;
+  }
+  .icones i {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
