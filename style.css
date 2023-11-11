@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -166,12 +167,39 @@ i {
   background-color: #06121E;
   overflow: hidden;
   color: #ffffff;
+  display: flex; /* Adicione esta linha para tornar o conteúdo lado a lado */
 }
 
-.sobre-conteudo img {
-  max-width: 570px;
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px 14px 64px 14px;
 }
 
+img {
+  max-width: 590px;
+}
+
+.descricao-sobre div {
+  flex: 1;
+}
+
+.descricao-sobre h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.descricao-sobre p {
+  margin-bottom: 14px;
+  font-weight: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
