@@ -5,31 +5,6 @@
   outline: 0;
 }
 
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.bg-home {
-  position: relative;
-}
-
-.bg-home::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 16, 38, 0.1), #06121e), url("../Imagem/bg-home.png");
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-}
-
 header {
   width: 100%;
 }
@@ -46,7 +21,7 @@ i {
 
 .icones {
   display: flex;
-  gap: 20px;
+  gap: 14px;
 }
 
 .icones a:hover i {
@@ -80,7 +55,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,6 +77,101 @@ i {
     font-size: 30px;
   }
 }
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0.8;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 16, 38, 0.1), #06121e), url("../Imagem/bg-home.png");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.hero {
+  color: #ffffff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 960px;
+  font-size: 40px;
+}
+.hero p {
+  text-align: center;
+  margin: 14px 0;
+}
+.hero .botao-especial {
+  padding: 14px 28px;
+  border: 0;
+  color: #ffffff;
+  background-color: #83D940;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin: 14px 0;
+}
+.hero .botao-especial:hover {
+  animation: animacaoBotao 0.8s alternate infinite;
+}
+@keyframes animacaoBotao {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .hero {
+    min-width: 60vh;
+  }
+  .hero h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .hero h1 {
+    font-size: 24px;
+  }
+}
+
+.sobre {
+  background-color: #06121E;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.sobre-conteudo img {
+  max-width: 570px;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

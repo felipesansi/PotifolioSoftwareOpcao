@@ -1,6 +1,7 @@
 .container{
     max-width: 1240px;
     margin:0 auto;
+    padding: 0.8;
    
 }
 
@@ -20,9 +21,94 @@
     background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
-.hero{
-    color: $white-normal;
+.hero
+{
+    color:  $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+
+    h1{
+     text-align: center;
+        line-height: 150%;
+        max-width: 960px ;
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+
+    .botao-especial{
+     padding: 14px 28px;
+       border: 0;
+        color: $white-normal;
+        background-color: $grenn-light;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 6px;
+        margin: 14px 0;
+    }
+    .botao-especial:hover{
+        animation: animacaoBotao 0.8s alternate infinite
+    }
+
+    @keyframes animacaoBotao {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
+        
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .hero{
+            min-width:  60vh;
+        }
+        h1
+        {
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+        p{ 
+            font-size: 14px;
+        }
+        
+    }
+
+    @media screen and (max-width: 768px) 
+    {
+
+        .hero h1
+        {
+           font-size: 24px;       
+        }
+   }
+
+
 }
+
+.sobre
+{
+background-color: $primary-normal;
+overflow: hidden;
+color: $white-normal;
+}
+.sobre-conteudo{
+    img{
+        max-width:  570px;
+    }
+}
+
+
+
