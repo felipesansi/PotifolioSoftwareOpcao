@@ -137,4 +137,29 @@ p{
     flex-direction: column;
 }
 }
-  
+.servicos{background-color: $white-normal;
+    color: $secundary-normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   padding:  54px 14px;
+   
+}
+  .servicos-conteudo h2{
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+
+  }
+
+
+  .servicos-conteudo p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+  }
+  .servicos
+
