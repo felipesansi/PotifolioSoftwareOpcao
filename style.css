@@ -261,7 +261,7 @@ img {
   z-index: 99;
 }
 
-.servico-info button {
+.servico-info a {
   color: #ffffff;
   background-color: #255202;
   padding: 4px 8px;
@@ -274,6 +274,31 @@ img {
     flex-direction: column;
   }
 }
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 54px 0px;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.rodape-icones {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

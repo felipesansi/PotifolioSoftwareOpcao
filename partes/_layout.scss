@@ -205,7 +205,7 @@ z-index: 99;
 }
 
 
-.servico-info button
+.servico-info a
 {
     color:$white-normal;
     background-color: $grenn-dark;
@@ -219,6 +219,31 @@ z-index: 99;
         flex-direction: column;
     }
 
-
 }
 
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 54px 0px;
+    gap: 20px;
+    color: $white-normal;
+}
+.rodape-icones
+{
+    display: flex;
+    gap: 14px;
+}
+
+.btn-whatsapp
+{
+    position: fixed;
+    right:  0;
+  bottom: 0;
+   z-index: 99;
+     
+    img{
+        max-width :74px;
+    }
+}
