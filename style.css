@@ -238,9 +238,42 @@ img {
   display: flex;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0px -1px 17px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px -1px 17px 4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+.servico img {
+  width: 100%;
+  max-width: 360px;
+  transition: transform 0.3s;
 }
 
+.servico img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.servico-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.servico-info button {
+  color: #ffffff;
+  background-color: #255202;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .servico-prestados {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
