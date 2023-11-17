@@ -291,12 +291,18 @@ img {
 
 .btn-whatsapp {
   position: fixed;
+  padding-right: 24px;
+  padding-bottom: 24px;
   right: 0;
   bottom: 0;
   z-index: 99;
 }
 .btn-whatsapp img {
   max-width: 74px;
+  transition: transform 0.7s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.2);
 }
 
 body {

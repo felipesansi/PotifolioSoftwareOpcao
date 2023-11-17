@@ -239,11 +239,20 @@ z-index: 99;
 .btn-whatsapp
 {
     position: fixed;
+    padding-right: 24px;
+    padding-bottom: 24px;
     right:  0;
-  bottom: 0;
+    bottom: 0;
    z-index: 99;
      
-    img{
+    img
+    {
         max-width :74px;
+        transition:  transform 0.7s;
     }
+     
+
+ img:hover{
+    transform:  scale(1.2);
+}
 }
