@@ -179,7 +179,7 @@ i {
 }
 
 img {
-  max-width: 590px;
+  max-width: 330px;
 }
 
 .descricao-sobre div {
@@ -187,7 +187,13 @@ img {
 }
 
 .descricao-sobre h2 {
+  text-align: center;
+  text-transform: uppercase;
   font-size: 38px;
+  padding-bottom: 33px;
+}
+.descricao-sobre h4 {
+  font-size: 24px;
   margin-bottom: 24px;
 }
 .descricao-sobre p {
@@ -195,9 +201,37 @@ img {
   font-weight: 150%;
 }
 
+.descricao-matheus {
+  display: block;
+  margin-left: 350px;
+  margin-top: 60px;
+}
+.descricao-matheus h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.descricao-matheus h4 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.descricao-matheus p {
+  margin-bottom: 14px;
+  font-weight: 150%;
+}
+.descricao-matheus img {
+  max-width: 230px;
+}
+
+.descricao-matheus div {
+  flex: 1;
+}
+
 @media screen and (max-width: 768px) {
   .sobre-conteudo {
     flex-direction: column;
+  }
+  .descricao-matheus {
+    margin: 0;
   }
 }
 .servicos {
@@ -243,7 +277,7 @@ img {
 }
 .servico img {
   width: 100%;
-  max-width: 360px;
+  max-width: 460px;
   transition: transform 0.3s;
 }
 
@@ -267,6 +301,7 @@ img {
   padding: 4px 8px;
   border: 0;
   border-radius: 4px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {

@@ -113,28 +113,72 @@
   }
   
   img {
-    max-width: 590px;
+    max-width: 330px;
+   
   }
   
   .descricao-sobre div
-  {
+  { 
     flex: 1;
   }
   .descricao-sobre{
-h2{
-    font-size: 38px;
-    margin-bottom: 24px;
 
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+  padding-bottom: 33px;
+
+}
+h4{
+    font-size: 24px;
+    margin-bottom: 24px;
 }
 p{
     margin-bottom: 14px;
     font-weight: 150%;
 }
+
   }
+  
+  
+
+
+  .descricao-matheus {
+
+ display: block;
+ margin-left: 350px;
+ margin-top:   60px;
+ h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+
+}
+h4{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+p{
+    margin-bottom: 14px;
+    font-weight: 150%;
+}
+  img{
+    max-width: 230px;
+  }
+  
+  }
+  .descricao-matheus div{
+    flex: 1;
+  }
+
   @media screen and (max-width: 768px) 
 {
 .sobre-conteudo{
     flex-direction: column;
+
+}
+.descricao-matheus{
+    margin: 0;
 }
 }
 
@@ -150,13 +194,14 @@ p{
 }
 
 .servicos-conteudo h2
-{
- 
+{ 
+
     text-transform: uppercase;
     text-align: center;
     font-size: 38px;
     margin-bottom: 14px;
 }
+
 .servicos-conteudo p
 {
     line-height: 150%;
@@ -182,8 +227,8 @@ p{
 
     img{
         width: 100%;
-        max-width: 360px; 
-   transition:  transform 0.30s
+        max-width: 460px; 
+        transition:  transform 0.30s
     }
 
     
@@ -209,9 +254,10 @@ z-index: 99;
 {
     color:$white-normal;
     background-color: $grenn-dark;
-    padding: 4px 8px;
+    padding: 4px 8px ;
     border: 0;;
     border-radius: 4px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
