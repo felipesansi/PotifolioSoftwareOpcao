@@ -179,7 +179,7 @@ i {
 }
 
 img {
-  max-width: 230px;
+  max-width: 430px;
 }
 
 .descricao-sobre div {
@@ -219,7 +219,7 @@ img {
   font-weight: 150%;
 }
 .descricao-matheus img {
-  max-width: 230px;
+  max-width: 240px;
 }
 
 .descricao-matheus div {
@@ -232,6 +232,9 @@ img {
   }
   .descricao-matheus {
     margin: 0;
+  }
+  .descricao-matheus img {
+    max-width: 348px;
   }
   .servico-info a {
     margin-left: 7px;
@@ -343,6 +346,31 @@ img {
   transform: scale(1.2);
 }
 
+.btn-whatsapp .text-whatsapp {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #040f1a;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-whatsapp:hover.text-whatsapp {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp img {
+    max-width: 64px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
