@@ -65,6 +65,3 @@ A estrutura do projeto é a seguinte:
 ---
 
 © 2023 | Dev Software Opção - Todos os direitos reservados
-```
-
-Você pode salvar esse conteúdo em um arquivo `README.md` no repositório do seu projeto. Certifique-se de ajustar qualquer informação específica que possa mudar, como links ou nomes de arquivos.
